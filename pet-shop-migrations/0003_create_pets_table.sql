@@ -3,7 +3,7 @@ CREATE TABLE pets (
     name VARCHAR(50) NOT NULL,
     type VARCHAR(50) NOT NULL,
     age INT,
-    breed INT,
+    breed VARCHAR(50) NOT NULL,
     species_id INT,
     FOREIGN KEY (species_id) REFERENCES species(id)
-)
+);

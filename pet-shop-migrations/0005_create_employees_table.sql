@@ -3,7 +3,7 @@ CREATE TABLE employees (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     position VARCHAR(50) NOT NULL,
-    salary VARCHAR(50) NOT NULL,
+    salary DECIMAL(10,2) NOT NULL,
     client_id INT,
     FOREIGN KEY (client_id) REFERENCES clients(id)
 );
